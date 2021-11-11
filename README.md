@@ -1,5 +1,7 @@
 # RemakeSimulator
-我的评价是：寄！
-My comment: /remake
-请使用Visual Studio编译！
-Please complie by Visual Studio!
+我的评价是：寄！<br>
+====
+My comment: /remake<br>
+====
+请使用Visual Studio编译！<br>
+Please complie by Visual Studio!<br>
