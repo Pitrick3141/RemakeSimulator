@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="eventDescription0" xml:space="preserve">
+    <value>这年的冬天格外寒冷,风雪拍打着门窗...</value>
+  </data>
+  <data name="eventDescription1" xml:space="preserve">
+    <value>父母正领着你出门，一辆失控的泥头车忽然向你冲来...</value>
+  </data>
+  <data name="eventDescription10" xml:space="preserve">
+    <value>你坐在家中阅读今天的报纸，</value>
+  </data>
+  <data name="eventDescription2" xml:space="preserve">
+    <value>你和隔壁的二狗撒尿和泥巴，玩的很开心</value>
+  </data>
+  <data name="eventDescription3" xml:space="preserve">
+    <value>你被父母强迫在家读书</value>
+  </data>
+  <data name="eventDescription4" xml:space="preserve">
+    <value>你借着和煦的春风放飞了手中的纸鸢</value>
+  </data>
+  <data name="eventDescription5" xml:space="preserve">
+    <value>父母正领着你出门，一辆失控的马车忽然向你冲来...</value>
+  </data>
+  <data name="eventDescription6" xml:space="preserve">
+    <value>你已经到了该上小学的年龄，父母带你来到了一所崭新的学校...</value>
+  </data>
+  <data name="eventDescription7" xml:space="preserve">
+    <value>你已经到了该上小学的年龄，父母带你来到了一所破旧的学校...</value>
+  </data>
+  <data name="eventDescription8" xml:space="preserve">
+    <value>你已经到了该上小学的年龄，父母带你来到了一所学校，你很担心同学们发现你的身体和别人不同</value>
+  </data>
+  <data name="eventDescription9" xml:space="preserve">
+    <value>你坐在家里的沙发上看电视，</value>
+  </data>
+  <data name="eventName0" xml:space="preserve">
+    <value>夭折</value>
+  </data>
+  <data name="eventName1" xml:space="preserve">
+    <value>车祸</value>
+  </data>
+  <data name="eventName10" xml:space="preserve">
+    <value>闲暇时光：报纸</value>
+  </data>
+  <data name="eventName2" xml:space="preserve">
+    <value>儿时玩乐</value>
+  </data>
+  <data name="eventName3" xml:space="preserve">
+    <value>读书</value>
+  </data>
+  <data name="eventName4" xml:space="preserve">
+    <value>风筝</value>
+  </data>
+  <data name="eventName5" xml:space="preserve">
+    <value>车(?)祸</value>
+  </data>
+  <data name="eventName6" xml:space="preserve">
+    <value>入学</value>
+  </data>
+  <data name="eventName7" xml:space="preserve">
+    <value>入学：破旧的学校</value>
+  </data>
+  <data name="eventName8" xml:space="preserve">
+    <value>入学：身体的秘密</value>
+  </data>
+  <data name="eventName9" xml:space="preserve">
+    <value>闲暇时光：新闻</value>
+  </data>
+  <data name="eventResult0-0" xml:space="preserve">
+    <value>身体强壮的你根本不在乎这点寒冷，春天再度来临...</value>
+  </data>
+  <data name="eventResult0-1" xml:space="preserve">
+    <value>体弱的你生了一场大病，幸运的是你很快康复了，春天再度来临...</value>
+  </data>
+  <data name="eventResult0-2" xml:space="preserve">
+    <value>体弱的你生了一场大病，在一个漆黑的夜里离开了这个世界...</value>
+  </data>
+  <data name="eventResult1-0" xml:space="preserve">
+    <value>体质超群的你轻轻一跃便闪到了一旁</value>
+  </data>
+  <data name="eventResult1-1" xml:space="preserve">
+    <value>幸运的是，泥头车司机在最后时刻重新控制了车辆，在你面前停了下来</value>
+  </data>
+  <data name="eventResult1-2" xml:space="preserve">
+    <value>你没能躲开泥头车的撞击，你再次睁开眼睛的时候已经到了异世界...</value>
+  </data>
+  <data name="eventResult1-3" xml:space="preserve">
+    <value>在你绝望的瞬间，一股柔和的光芒将你包裹，泥头车呼啸而过，你却毫发无损</value>
+  </data>
+  <data name="eventResult3-0" xml:space="preserve">
+    <value>...今年却有所不同，你不再学习那些单调晦涩的文章，你感到十分快乐，父母却有些忧心忡忡</value>
+  </data>
+  <data name="eventResult5-0" xml:space="preserve">
+    <value>体质超群的你轻轻一跃便闪到了一旁</value>
+  </data>
+  <data name="eventResult5-1" xml:space="preserve">
+    <value>幸运的是，车夫在最后时刻重新控制了马匹，在你面前停了下来</value>
+  </data>
+  <data name="eventResult5-2" xml:space="preserve">
+    <value>你没能躲开马车的撞击，你再次睁开眼睛的时候已经到了异世界...</value>
+  </data>
+  <data name="eventResult5-3" xml:space="preserve">
+    <value>在你绝望的瞬间，一股柔和的光芒将你包裹，马车呼啸而过，你却毫发无损</value>
+  </data>
+  <data name="eventResult6-0" xml:space="preserve">
+    <value>智力超乎常人的你轻松成为了同学们的偶像，你感到十分快乐</value>
+  </data>
+  <data name="eventResult6-1" xml:space="preserve">
+    <value>虽然你看不懂试卷上的题目，但你却总能猜中答案，这使你感到十分庆幸</value>
+  </data>
+  <data name="eventResult6-2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="eventResult7-0" xml:space="preserve">
+    <value>智力超乎常人的你轻松成为了同学们的偶像，你感到十分快乐</value>
+  </data>
+  <data name="eventResult7-1" xml:space="preserve">
+    <value>虽然你看不懂试卷上的题目，但你却总能猜中答案，这使你感到十分庆幸</value>
+  </data>
+  <data name="eventResult7-2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="eventResult8-0" xml:space="preserve">
+    <value>同学们还是发现了你身体的秘密，但你的盛世美颜深深折服了众人，你感到很自豪</value>
+  </data>
+  <data name="eventResult8-1" xml:space="preserve">
+    <value>同学们还是发现了你身体的秘密，幸运的是大家接纳了你的不同，你的心中十分温暖</value>
+  </data>
+  <data name="eventResult8-2" xml:space="preserve">
+    <value>同学们还是发现了你身体的秘密，大家开始疏远你，你深刻意识到与他人的隔阂</value>
+  </data>
+</root>
