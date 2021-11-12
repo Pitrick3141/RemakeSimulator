@@ -33,7 +33,11 @@ namespace Remake_Simulator_Csharp
         public void Remake()
         {
             //初始化
-            System.Console.WriteLine("[info]/Remake成功！");
+            if(Globle.isDebug == true)
+            {
+                System.Console.WriteLine("[debug]主界面初始化成功");
+            }
+            Achievements.AchievementsObtain(1);//获得成就：Hello World!
             listBox1.Items.Clear();
             button3.Visible = false;
             button1.Enabled = true;
@@ -130,6 +134,27 @@ namespace Remake_Simulator_Csharp
             //查询当前状态
             Info("当前是" + Globle.time + "年");
             Info("你现在" + Globle.age + "岁");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FormStatistics formStatistics = new FormStatistics();
+            formStatistics.Show();
+        }
+
+        private void 设置ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(Globle.isDebug == true)
+            {
+                MenuDebug.Visible = true;
+            }
+        }
+
+        private void MenuSuicide_Click(object sender, EventArgs e)
+        {
+            Info("你寄了...点击人生总结按钮查看得分");
+            button1.Enabled = false;
+            button3.Visible = true;
         }
     }
 }

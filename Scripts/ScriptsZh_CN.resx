@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="achievementDescription0" xml:space="preserve">
+    <value>这是个测试！</value>
+  </data>
+  <data name="achievementDescription1" xml:space="preserve">
+    <value>第一次开始游戏</value>
+  </data>
+  <data name="achievementName0" xml:space="preserve">
+    <value>测试成就</value>
+  </data>
+  <data name="achievementName1" xml:space="preserve">
+    <value>Hello World!</value>
+  </data>
   <data name="eventDescription0" xml:space="preserve">
     <value>这年的冬天格外寒冷,风雪拍打着门窗...</value>
   </data>
@@ -203,6 +215,9 @@
   </data>
   <data name="eventResult1-3" xml:space="preserve">
     <value>在你绝望的瞬间，一股柔和的光芒将你包裹，泥头车呼啸而过，你却毫发无损</value>
+  </data>
+  <data name="eventResult10-0" xml:space="preserve">
+    <value>然而你并看不懂报纸上密密麻麻的字</value>
   </data>
   <data name="eventResult3-0" xml:space="preserve">
     <value>...今年却有所不同，你不再学习那些单调晦涩的文章，你感到十分快乐，父母却有些忧心忡忡</value>

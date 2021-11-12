@@ -229,6 +229,7 @@ namespace Remake_Simulator_Csharp
         public static string EventOccur(int index)
         {
             int requ = 0;
+            Globle.eventOccur++;
             switch(Globle.difficult)
             {
                 case Globle.Difficult.Easy:

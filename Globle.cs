@@ -1,4 +1,7 @@
-﻿namespace Remake_Simulator_Csharp
+﻿using System;
+using LitJson;
+using System.IO;
+namespace Remake_Simulator_Csharp
 {
     class Globle
     {
@@ -10,10 +13,26 @@
 
         public static void Initialize()
         {
+            if(age > maxLiveSpan)
+            {
+                maxLiveSpan = age;
+            }
+            if(newsBrowse > maxNewsBrowse)
+            {
+                maxNewsBrowse = newsBrowse;
+            }
+            if(eventOccur > maxEventOccur)
+            {
+                maxEventOccur = eventOccur;
+            }
+            totalLiveSpan += age;
+            totalNewsBrowse += newsBrowse;
+            totalEventOccur += eventOccur;
+            SaveGame();
             time = 1900;
             difficult = Difficult.Easy;
             isAlive = true;
-            age = intelligence = fitness = wealth = appearance = fortunate = 0;
+            age = newsBrowse = eventOccur = intelligence = fitness = wealth = appearance = fortunate = 0;
             gender = Gender.男性;
             birth = BirthPlace.城市;
             isMagicLearned = isManualDistEnabled = isAsexual = isIntersexual = isRevivable = false;
@@ -23,8 +42,48 @@
             //formPoints.PointsInitialize();
             //formMain.Remake();
             formStart.StartInitialize();
-            System.Console.WriteLine("[info]全局变量已重置,准备/remake!");
+            if(isDebug == true)
+            {
+                System.Console.WriteLine("[debug]全局变量已重置!");
+            }
+            
         }//重新开始游戏时的初始化
+
+        public static void SaveGame()
+        {
+            var savingData = new JsonData();
+            savingData["maxLiveSpan"] = maxLiveSpan;
+            savingData["maxEventOccur"] = maxEventOccur;
+            savingData["maxNewsBrowse"] = maxNewsBrowse;
+            savingData["totalLiveSpan"] = totalLiveSpan;
+            savingData["totalEventOccur"] = totalEventOccur;
+            savingData["totalNewsBrowse"] = totalNewsBrowse;
+            for(int i = 0;i<Achievements.achievements.Length;i++)
+            {
+                savingData["achievementObtained" + i.ToString()] = Achievements.achievements[i].AchievementObtained;
+                savingData["achievementObtainedTime" + i.ToString()] = Achievements.achievements[i].AchievementObtainedTime;
+            }
+
+            using (StreamWriter sw = new StreamWriter("save.txt"))
+            {
+                sw.Write(savingData.ToJson());
+            }
+        }
+        public static void ReadGame()
+        {
+            JsonData savingData = JsonMapper.ToObject(File.ReadAllText("save.txt"));
+            maxLiveSpan = (int)savingData["maxLiveSpan"];
+            maxEventOccur = (int)savingData["maxEventOccur"];
+            maxNewsBrowse = (int)savingData["maxNewsBrowse"];
+            totalLiveSpan = (int)savingData["totalLiveSpan"];
+            totalEventOccur = (int)savingData["totalEventOccur"];
+            totalNewsBrowse = (int)savingData["totalNewsBrowse"];
+            for (int i = 0; i < Achievements.achievements.Length; i++)
+            {
+                Achievements.achievements[i].AchievementObtained = (bool)savingData["achievementObtained" + i.ToString()];
+                Achievements.achievements[i].AchievementObtainedTime = savingData["achievementObtainedTime" + i.ToString()].ToString();
+            }
+        }
         public enum Gender
         {
             男性,
@@ -61,6 +120,8 @@
         //人物基础属性
         public static bool isAlive = true;//是否活着
         public static int age = 0;//年龄
+        public static int eventOccur = 0;//事件发生次数
+        public static int newsBrowse = 0;//新闻浏览次数
         public static int intelligence = 0;//智力
         public static int fitness = 0;//体质
         public static int wealth = 0;//财富
@@ -85,5 +146,13 @@
 
         //当前事件id
         public static int eventIndex = -1;
+
+        //统计数据
+        public static int maxLiveSpan = 0;
+        public static int maxEventOccur = 0;
+        public static int maxNewsBrowse = 0;
+        public static int totalLiveSpan = 0;
+        public static int totalEventOccur = 0;
+        public static int totalNewsBrowse = 0;
     }
 }

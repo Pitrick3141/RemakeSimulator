@@ -18,30 +18,30 @@ namespace Remake_Simulator_Csharp
         {
             if(start)
             {
-                button3.Enabled = true;
-                button4.Enabled = true;
-                button5.Enabled = true;
-                button1.Enabled = false;
+                ButtonSelect1.Enabled = true;
+                ButtonSelect2.Enabled = true;
+                ButtonSelect3.Enabled = true;
+                ButtonRoll.Enabled = false;
                 richTextBox1.Clear();
                 richTextBox2.Clear();
                 richTextBox3.Clear();
                 richTextBox4.Clear();
                 richTextBox5.Clear();
                 richTextBox6.Clear();
-                button3.Text = "选择";
-                button4.Text = "选择";
-                button5.Text = "选择";
+                ButtonSelect1.Text = "选择";
+                ButtonSelect2.Text = "选择";
+                ButtonSelect3.Text = "选择";
                 //开始能力选择
                 //设置抽取按钮不可交互，直到选中能力后才可交互,设置选择能力按钮可交互
             }
             else
             {
-                button3.Enabled = false;
-                button4.Enabled = false;
-                button5.Enabled = false;
+                ButtonSelect1.Enabled = false;
+                ButtonSelect2.Enabled = false;
+                ButtonSelect3.Enabled = false;
                 if(Globle.rollChance > 0)
                 {
-                    button1.Enabled = true;
+                    ButtonRoll.Enabled = true;
                     //只有还有抽取次数的时候才激活抽取按钮
                 }
                 //结束能力选择
@@ -54,7 +54,7 @@ namespace Remake_Simulator_Csharp
         {
             Abilities.AbilitySelect(abilityIndex1);
             AbilityChooseInitiallize(false);
-            button3.Text = "已选择";
+            ButtonSelect1.Text = "已选择";
             //选中第一个能力
         }
 
@@ -62,7 +62,7 @@ namespace Remake_Simulator_Csharp
         {
             Abilities.AbilitySelect(abilityIndex2);
             AbilityChooseInitiallize(false);
-            button4.Text = "已选择";
+            ButtonSelect2.Text = "已选择";
             //选中第二个能力
         }
 
@@ -70,7 +70,7 @@ namespace Remake_Simulator_Csharp
         {
             Abilities.AbilitySelect(abilityIndex3);
             AbilityChooseInitiallize(false);
-            button5.Text = "已选择";
+            ButtonSelect3.Text = "已选择";
             //选中第三个能力
         }
 
@@ -82,13 +82,18 @@ namespace Remake_Simulator_Csharp
 
         public void StartInitialize()
         {
-            System.Console.WriteLine("[info]能力选择模块已重置！");
-            button1.Text = "抽取能力";
-            button1.Enabled = true;
+            if(Globle.isDebug == true)
+            {
+                System.Console.WriteLine("[debug]能力选择模块已重置");
+            }
+            ButtonRoll.Text = "抽取能力";
+            ButtonRoll.Enabled = true;
         }
         private void FormStart_Load(object sender, EventArgs e)
         {
+            Globle.ReadGame();
             RandomEvents.EventsInitiallize();
+            Achievements.AchievementsInitiallize();
         }
 
         private void debugToolStripMenuItem_Click(object sender, EventArgs e)
@@ -99,22 +104,34 @@ namespace Remake_Simulator_Csharp
         {
             if(Globle.isDebug == true && MenuDebug.Visible == false)
             {
-                System.Console.WriteLine("[debug]已开启debug模式！");
+                System.Console.WriteLine("[debug]已开启debug模式");
                 MenuDebug.Visible = true;
             }
         }
 
         private void MenuSkipAbility_Click(object sender, EventArgs e)
         {
-            System.Console.WriteLine("[debug]已跳过能力选择！");
+            System.Console.WriteLine("[debug]已跳过能力选择");
             Globle.formPoints.Show();
             this.Hide();
         }
 
         private void MenuEnableManualDist_Click(object sender, EventArgs e)
         {
-            System.Console.WriteLine("[debug]已开启手动分配点数！");
+            System.Console.WriteLine("[debug]已开启手动分配点数");
             Globle.isManualDistEnabled = true;
+        }
+
+        private void MenuAchievementTest_Click(object sender, EventArgs e)
+        {
+            System.Console.WriteLine("[debug]已生成测试成就");
+            Achievements.AchievementsObtain(0);
+        }
+
+        private void ButtonStatistics_Click(object sender, EventArgs e)
+        {
+            FormStatistics formStatistics = new FormStatistics();
+            formStatistics.Show();
         }
 
         public FormStart()
@@ -156,13 +173,13 @@ namespace Remake_Simulator_Csharp
 
             if (Globle.rollChance > 0)
             {
-                button1.Text = "剩余" + Globle.rollChance + "次抽取机会";
+                ButtonRoll.Text = "剩余" + Globle.rollChance + "次抽取机会";
                 //更改按钮名称，显示剩余次数
             }
             else
             {
-                button1.Text = "抽取次数已用完！";
-                button2.Enabled = true;
+                ButtonRoll.Text = "抽取次数已用完！";
+                ButtonNext.Enabled = true;
                 //抽取次数用完，开放下一阶段
             }
         }

@@ -29,50 +29,52 @@ namespace Remake_Simulator_Csharp
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ButtonRoll = new System.Windows.Forms.Button();
+            this.ButtonNext = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.ButtonSelect3 = new System.Windows.Forms.Button();
+            this.ButtonSelect2 = new System.Windows.Forms.Button();
+            this.ButtonSelect1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuDebug = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuEnableManualDist = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuSkipAbility = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuAchievementTest = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ButtonStatistics = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // ButtonRoll
             // 
-            this.button1.Location = new System.Drawing.Point(12, 362);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 64);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "抽取能力";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ButtonRoll.Location = new System.Drawing.Point(12, 362);
+            this.ButtonRoll.Margin = new System.Windows.Forms.Padding(2);
+            this.ButtonRoll.Name = "ButtonRoll";
+            this.ButtonRoll.Size = new System.Drawing.Size(112, 64);
+            this.ButtonRoll.TabIndex = 0;
+            this.ButtonRoll.Text = "抽取能力";
+            this.ButtonRoll.UseVisualStyleBackColor = true;
+            this.ButtonRoll.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // ButtonNext
             // 
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(467, 362);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 64);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "继续...";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ButtonNext.Enabled = false;
+            this.ButtonNext.Location = new System.Drawing.Point(467, 362);
+            this.ButtonNext.Margin = new System.Windows.Forms.Padding(2);
+            this.ButtonNext.Name = "ButtonNext";
+            this.ButtonNext.Size = new System.Drawing.Size(112, 64);
+            this.ButtonNext.TabIndex = 1;
+            this.ButtonNext.Text = "继续...";
+            this.ButtonNext.UseVisualStyleBackColor = true;
+            this.ButtonNext.Click += new System.EventHandler(this.button2_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -86,9 +88,9 @@ namespace Remake_Simulator_Csharp
             this.tableLayoutPanel1.Controls.Add(this.richTextBox4, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.richTextBox3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.richTextBox2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.ButtonSelect3, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.ButtonSelect2, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.ButtonSelect1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.richTextBox1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 27);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
@@ -166,41 +168,41 @@ namespace Remake_Simulator_Csharp
             this.richTextBox2.TabIndex = 10;
             this.richTextBox2.Text = "";
             // 
-            // button5
+            // ButtonSelect3
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(381, 255);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(186, 60);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "选择";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.ButtonSelect3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonSelect3.Location = new System.Drawing.Point(381, 255);
+            this.ButtonSelect3.Margin = new System.Windows.Forms.Padding(2);
+            this.ButtonSelect3.Name = "ButtonSelect3";
+            this.ButtonSelect3.Size = new System.Drawing.Size(186, 60);
+            this.ButtonSelect3.TabIndex = 8;
+            this.ButtonSelect3.Text = "选择";
+            this.ButtonSelect3.UseVisualStyleBackColor = true;
+            this.ButtonSelect3.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
+            // ButtonSelect2
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(192, 255);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(184, 60);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "选择";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.ButtonSelect2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonSelect2.Location = new System.Drawing.Point(192, 255);
+            this.ButtonSelect2.Margin = new System.Windows.Forms.Padding(2);
+            this.ButtonSelect2.Name = "ButtonSelect2";
+            this.ButtonSelect2.Size = new System.Drawing.Size(184, 60);
+            this.ButtonSelect2.TabIndex = 7;
+            this.ButtonSelect2.Text = "选择";
+            this.ButtonSelect2.UseVisualStyleBackColor = true;
+            this.ButtonSelect2.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // ButtonSelect1
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(3, 255);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 60);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "选择";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.ButtonSelect1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonSelect1.Location = new System.Drawing.Point(3, 255);
+            this.ButtonSelect1.Margin = new System.Windows.Forms.Padding(2);
+            this.ButtonSelect1.Name = "ButtonSelect1";
+            this.ButtonSelect1.Size = new System.Drawing.Size(184, 60);
+            this.ButtonSelect1.TabIndex = 6;
+            this.ButtonSelect1.Text = "选择";
+            this.ButtonSelect1.UseVisualStyleBackColor = true;
+            this.ButtonSelect1.Click += new System.EventHandler(this.button3_Click);
             // 
             // richTextBox1
             // 
@@ -239,9 +241,10 @@ namespace Remake_Simulator_Csharp
             // 
             this.MenuDebug.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MenuEnableManualDist,
-            this.MenuSkipAbility});
+            this.MenuSkipAbility,
+            this.MenuAchievementTest});
             this.MenuDebug.Name = "MenuDebug";
-            this.MenuDebug.Size = new System.Drawing.Size(180, 22);
+            this.MenuDebug.Size = new System.Drawing.Size(114, 22);
             this.MenuDebug.Text = "debug";
             this.MenuDebug.Visible = false;
             this.MenuDebug.Click += new System.EventHandler(this.debugToolStripMenuItem_Click);
@@ -249,31 +252,50 @@ namespace Remake_Simulator_Csharp
             // MenuEnableManualDist
             // 
             this.MenuEnableManualDist.Name = "MenuEnableManualDist";
-            this.MenuEnableManualDist.Size = new System.Drawing.Size(180, 22);
+            this.MenuEnableManualDist.Size = new System.Drawing.Size(172, 22);
             this.MenuEnableManualDist.Text = "允许自由分配点数";
             this.MenuEnableManualDist.Click += new System.EventHandler(this.MenuEnableManualDist_Click);
             // 
             // MenuSkipAbility
             // 
             this.MenuSkipAbility.Name = "MenuSkipAbility";
-            this.MenuSkipAbility.Size = new System.Drawing.Size(180, 22);
+            this.MenuSkipAbility.Size = new System.Drawing.Size(172, 22);
             this.MenuSkipAbility.Text = "跳过能力选择";
             this.MenuSkipAbility.Click += new System.EventHandler(this.MenuSkipAbility_Click);
+            // 
+            // MenuAchievementTest
+            // 
+            this.MenuAchievementTest.Name = "MenuAchievementTest";
+            this.MenuAchievementTest.Size = new System.Drawing.Size(172, 22);
+            this.MenuAchievementTest.Text = "成就弹窗测试";
+            this.MenuAchievementTest.Click += new System.EventHandler(this.MenuAchievementTest_Click);
             // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.关于ToolStripMenuItem.Text = "关于";
+            // 
+            // ButtonStatistics
+            // 
+            this.ButtonStatistics.Location = new System.Drawing.Point(351, 362);
+            this.ButtonStatistics.Margin = new System.Windows.Forms.Padding(2);
+            this.ButtonStatistics.Name = "ButtonStatistics";
+            this.ButtonStatistics.Size = new System.Drawing.Size(112, 64);
+            this.ButtonStatistics.TabIndex = 4;
+            this.ButtonStatistics.Text = "统计与成就";
+            this.ButtonStatistics.UseVisualStyleBackColor = true;
+            this.ButtonStatistics.Click += new System.EventHandler(this.ButtonStatistics_Click);
             // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 437);
+            this.Controls.Add(this.ButtonStatistics);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonNext);
+            this.Controls.Add(this.ButtonRoll);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
@@ -292,12 +314,12 @@ namespace Remake_Simulator_Csharp
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ButtonRoll;
+        private System.Windows.Forms.Button ButtonNext;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button ButtonSelect3;
+        private System.Windows.Forms.Button ButtonSelect2;
+        private System.Windows.Forms.Button ButtonSelect1;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox1;
@@ -310,6 +332,8 @@ namespace Remake_Simulator_Csharp
         private System.Windows.Forms.ToolStripMenuItem MenuEnableManualDist;
         private System.Windows.Forms.ToolStripMenuItem MenuSkipAbility;
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuAchievementTest;
+        private System.Windows.Forms.Button ButtonStatistics;
     }
 }
 

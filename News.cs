@@ -220,6 +220,7 @@ namespace Remake_Simulator_Csharp
         }
         public static string NewsOccur(int index)
         {
+            Globle.newsBrowse++;
             switch(index)
             {
                 default:

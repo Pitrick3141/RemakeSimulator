@@ -61,6 +61,42 @@ namespace Remake_Simulator_Csharp.Scripts {
         }
         
         /// <summary>
+        ///   查找类似 这是个测试！ 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription0 {
+            get {
+                return ResourceManager.GetString("achievementDescription0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 第一次开始游戏 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription1 {
+            get {
+                return ResourceManager.GetString("achievementDescription1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 测试成就 的本地化字符串。
+        /// </summary>
+        internal static string achievementName0 {
+            get {
+                return ResourceManager.GetString("achievementName0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Hello World! 的本地化字符串。
+        /// </summary>
+        internal static string achievementName1 {
+            get {
+                return ResourceManager.GetString("achievementName1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 这年的冬天格外寒冷,风雪拍打着门窗... 的本地化字符串。
         /// </summary>
         internal static string eventDescription0 {
@@ -318,6 +354,15 @@ namespace Remake_Simulator_Csharp.Scripts {
         internal static string eventResult1_3 {
             get {
                 return ResourceManager.GetString("eventResult1-3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 然而你并看不懂报纸上密密麻麻的字 的本地化字符串。
+        /// </summary>
+        internal static string eventResult10_0 {
+            get {
+                return ResourceManager.GetString("eventResult10-0", resourceCulture);
             }
         }
         

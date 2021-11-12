@@ -148,6 +148,56 @@ namespace Remake_Simulator_Csharp
                             break;
                     }
                     break;
+                case 5:
+                    switch (Globle.eventOccur)
+                    {
+                        case int n when (n < 10):
+                            RichTextBoxExtension.AppendTextColorful(richTextBox1, "不经世故", Color.Gray);
+                            score += 1;
+                            break;
+                        case int n when (n < 25):
+                            RichTextBoxExtension.AppendTextColorful(richTextBox1, "初出茅庐", Color.Blue);
+                            score += 3;
+                            break;
+                        case int n when (n < 50):
+                            RichTextBoxExtension.AppendTextColorful(richTextBox1, "走南闯北", Color.Violet);
+                            score += 5;
+                            break;
+                        case int n when (n < 100):
+                            RichTextBoxExtension.AppendTextColorful(richTextBox1, "轻车熟路", Color.Orange);
+                            score += 10;
+                            break;
+                        default:
+                            RichTextBoxExtension.AppendTextColorful(richTextBox1, "博古通今", Color.Crimson);
+                            score += 20;
+                            break;
+                    }
+                    break;
+                case 6:
+                    switch (Globle.newsBrowse)
+                    {
+                        case int n when (n < 5):
+                            RichTextBoxExtension.AppendTextColorful(richTextBox1, "耳目闭塞", Color.Gray);
+                            score += 1;
+                            break;
+                        case int n when (n < 10):
+                            RichTextBoxExtension.AppendTextColorful(richTextBox1, "独学寡闻", Color.Blue);
+                            score += 3;
+                            break;
+                        case int n when (n < 20):
+                            RichTextBoxExtension.AppendTextColorful(richTextBox1, "手不释卷", Color.Violet);
+                            score += 5;
+                            break;
+                        case int n when (n < 30):
+                            RichTextBoxExtension.AppendTextColorful(richTextBox1, "博览群书", Color.Orange);
+                            score += 10;
+                            break;
+                        default:
+                            RichTextBoxExtension.AppendTextColorful(richTextBox1, "枕典席文", Color.Crimson);
+                            score += 20;
+                            break;
+                    }
+                    break;
             }
         }
         public void EndInitialize()
@@ -187,7 +237,13 @@ namespace Remake_Simulator_Csharp
             RichTextBoxExtension.AppendTextColorful(richTextBox1, "财富：", Color.Black, false);
             RichTextBoxExtension.AppendTextColorful(richTextBox1, Globle.wealth.ToString(), Color.CornflowerBlue,false);
             AddComment(4);
-            
+            RichTextBoxExtension.AppendTextColorful(richTextBox1, "事件发生次数：", Color.Black, false);
+            RichTextBoxExtension.AppendTextColorful(richTextBox1, Globle.appearance.ToString(), Color.CornflowerBlue, false);
+            AddComment(5);
+            RichTextBoxExtension.AppendTextColorful(richTextBox1, "新闻浏览次数：", Color.Black, false);
+            RichTextBoxExtension.AppendTextColorful(richTextBox1, Globle.appearance.ToString(), Color.CornflowerBlue, false);
+            AddComment(6);
+
         }
         private void FormEnd_Load(object sender, EventArgs e)
         {
@@ -209,6 +265,12 @@ namespace Remake_Simulator_Csharp
             Globle.Initialize();
             Globle.formStart.Show();
             this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormStatistics formStatistics = new FormStatistics();
+            formStatistics.Show();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Remake_Simulator_Csharp
         int appeEx = 0, inteEx = 0, fitEx = 0, wealEx = 0;
         int rollChance = 5;
 
-        private void check()
+        private void Check()
         {
             int usedPoints = 0;
             try
@@ -60,7 +60,7 @@ namespace Remake_Simulator_Csharp
                 if (value >= 0 && value <= 10 || Globle.isDebug == true)
                 {
                     appeEx = value;
-                    check();
+                    Check();
                 }
                     
                 else
@@ -80,7 +80,7 @@ namespace Remake_Simulator_Csharp
                 if (value >= 0 && value <= 10 || Globle.isDebug == true)
                 {
                     inteEx = value;
-                    check();
+                    Check();
                 }    
                 else
                     textBox6.Text = "0";
@@ -99,7 +99,7 @@ namespace Remake_Simulator_Csharp
                 if (value >= 0 && value <= 10 || Globle.isDebug == true)
                 {
                     fitEx = value;
-                    check();
+                    Check();
                 }
                 else
                     textBox7.Text = "0";
@@ -118,7 +118,7 @@ namespace Remake_Simulator_Csharp
                 if (value >= 0 && value <= 10 || Globle.isDebug == true)
                 {
                     wealEx = value;
-                    check();
+                    Check();
                 }
                 else
                     textBox8.Text = "0";
@@ -135,7 +135,10 @@ namespace Remake_Simulator_Csharp
         }
         public void PointsInitialize()
         {
-            System.Console.WriteLine("[info]加点模块已重置！");
+            if(Globle.isDebug == true)
+            {
+                System.Console.WriteLine("[debug]加点模块已重置");
+            }
             rollChance = 5;
             label11.Text = Globle.points.ToString();
             textBox1.Text = Globle.appearance.ToString();
