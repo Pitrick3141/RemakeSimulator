@@ -79,6 +79,87 @@ namespace Remake_Simulator_Csharp.Scripts {
         }
         
         /// <summary>
+        ///   查找类似 度过一段相对成功的人生 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription10 {
+            get {
+                return ResourceManager.GetString("achievementDescription10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 第一次死亡 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription2 {
+            get {
+                return ResourceManager.GetString("achievementDescription2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 获得“仙寿”的评价 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription3 {
+            get {
+                return ResourceManager.GetString("achievementDescription3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 获得“天仙下凡”的评价 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription4 {
+            get {
+                return ResourceManager.GetString("achievementDescription4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 获得“慧眼秋毫”的评价 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription5 {
+            get {
+                return ResourceManager.GetString("achievementDescription5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 获得“金身罗汉”的评价 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription6 {
+            get {
+                return ResourceManager.GetString("achievementDescription6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 获得“财倾天下”的评价 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription7 {
+            get {
+                return ResourceManager.GetString("achievementDescription7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 获得”博古通今“的评价 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription8 {
+            get {
+                return ResourceManager.GetString("achievementDescription8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 获得”枕典席文“的评价 的本地化字符串。
+        /// </summary>
+        internal static string achievementDescription9 {
+            get {
+                return ResourceManager.GetString("achievementDescription9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 测试成就 的本地化字符串。
         /// </summary>
         internal static string achievementName0 {
@@ -93,6 +174,87 @@ namespace Remake_Simulator_Csharp.Scripts {
         internal static string achievementName1 {
             get {
                 return ResourceManager.GetString("achievementName1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 人上人 的本地化字符串。
+        /// </summary>
+        internal static string achievementName10 {
+            get {
+                return ResourceManager.GetString("achievementName10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 寄! 的本地化字符串。
+        /// </summary>
+        internal static string achievementName2 {
+            get {
+                return ResourceManager.GetString("achievementName2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 仙寿 的本地化字符串。
+        /// </summary>
+        internal static string achievementName3 {
+            get {
+                return ResourceManager.GetString("achievementName3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 天仙下凡 的本地化字符串。
+        /// </summary>
+        internal static string achievementName4 {
+            get {
+                return ResourceManager.GetString("achievementName4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 慧眼秋毫 的本地化字符串。
+        /// </summary>
+        internal static string achievementName5 {
+            get {
+                return ResourceManager.GetString("achievementName5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 金身罗汉 的本地化字符串。
+        /// </summary>
+        internal static string achievementName6 {
+            get {
+                return ResourceManager.GetString("achievementName6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 财倾天下 的本地化字符串。
+        /// </summary>
+        internal static string achievementName7 {
+            get {
+                return ResourceManager.GetString("achievementName7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 博古通今 的本地化字符串。
+        /// </summary>
+        internal static string achievementName8 {
+            get {
+                return ResourceManager.GetString("achievementName8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 枕典席文 的本地化字符串。
+        /// </summary>
+        internal static string achievementName9 {
+            get {
+                return ResourceManager.GetString("achievementName9", resourceCulture);
             }
         }
         

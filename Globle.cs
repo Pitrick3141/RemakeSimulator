@@ -13,21 +13,6 @@ namespace Remake_Simulator_Csharp
 
         public static void Initialize()
         {
-            if(age > maxLiveSpan)
-            {
-                maxLiveSpan = age;
-            }
-            if(newsBrowse > maxNewsBrowse)
-            {
-                maxNewsBrowse = newsBrowse;
-            }
-            if(eventOccur > maxEventOccur)
-            {
-                maxEventOccur = eventOccur;
-            }
-            totalLiveSpan += age;
-            totalNewsBrowse += newsBrowse;
-            totalEventOccur += eventOccur;
             SaveGame();
             time = 1900;
             difficult = Difficult.Easy;
@@ -51,6 +36,21 @@ namespace Remake_Simulator_Csharp
 
         public static void SaveGame()
         {
+            if (age > maxLiveSpan)
+            {
+                maxLiveSpan = age;
+            }
+            if (newsBrowse > maxNewsBrowse)
+            {
+                maxNewsBrowse = newsBrowse;
+            }
+            if (eventOccur > maxEventOccur)
+            {
+                maxEventOccur = eventOccur;
+            }
+            totalLiveSpan += age;
+            totalNewsBrowse += newsBrowse;
+            totalEventOccur += eventOccur;
             var savingData = new JsonData();
             savingData["maxLiveSpan"] = maxLiveSpan;
             savingData["maxEventOccur"] = maxEventOccur;
@@ -80,8 +80,18 @@ namespace Remake_Simulator_Csharp
             totalNewsBrowse = (int)savingData["totalNewsBrowse"];
             for (int i = 0; i < Achievements.achievements.Length; i++)
             {
-                Achievements.achievements[i].AchievementObtained = (bool)savingData["achievementObtained" + i.ToString()];
-                Achievements.achievements[i].AchievementObtainedTime = savingData["achievementObtainedTime" + i.ToString()].ToString();
+                try
+                {
+                    Achievements.achievements[i].AchievementObtained = (bool)savingData["achievementObtained" + i.ToString()];
+                    Achievements.achievements[i].AchievementObtainedTime = savingData["achievementObtainedTime" + i.ToString()].ToString();
+                }
+                catch(Exception e)
+                {
+                    if(Globle.isDebug == true)
+                    {
+                        Console.WriteLine("[Error]" + e);//这里更新新的成就后使用旧的存档可能会出现问题，但是不严重
+                    }
+                }
             }
         }
         public enum Gender

@@ -123,11 +123,65 @@
   <data name="achievementDescription1" xml:space="preserve">
     <value>第一次开始游戏</value>
   </data>
+  <data name="achievementDescription10" xml:space="preserve">
+    <value>度过一段相对成功的人生</value>
+  </data>
+  <data name="achievementDescription2" xml:space="preserve">
+    <value>第一次死亡</value>
+  </data>
+  <data name="achievementDescription3" xml:space="preserve">
+    <value>获得“仙寿”的评价</value>
+  </data>
+  <data name="achievementDescription4" xml:space="preserve">
+    <value>获得“天仙下凡”的评价</value>
+  </data>
+  <data name="achievementDescription5" xml:space="preserve">
+    <value>获得“慧眼秋毫”的评价</value>
+  </data>
+  <data name="achievementDescription6" xml:space="preserve">
+    <value>获得“金身罗汉”的评价</value>
+  </data>
+  <data name="achievementDescription7" xml:space="preserve">
+    <value>获得“财倾天下”的评价</value>
+  </data>
+  <data name="achievementDescription8" xml:space="preserve">
+    <value>获得”博古通今“的评价</value>
+  </data>
+  <data name="achievementDescription9" xml:space="preserve">
+    <value>获得”枕典席文“的评价</value>
+  </data>
   <data name="achievementName0" xml:space="preserve">
     <value>测试成就</value>
   </data>
   <data name="achievementName1" xml:space="preserve">
     <value>Hello World!</value>
+  </data>
+  <data name="achievementName10" xml:space="preserve">
+    <value>人上人</value>
+  </data>
+  <data name="achievementName2" xml:space="preserve">
+    <value>寄!</value>
+  </data>
+  <data name="achievementName3" xml:space="preserve">
+    <value>仙寿</value>
+  </data>
+  <data name="achievementName4" xml:space="preserve">
+    <value>天仙下凡</value>
+  </data>
+  <data name="achievementName5" xml:space="preserve">
+    <value>慧眼秋毫</value>
+  </data>
+  <data name="achievementName6" xml:space="preserve">
+    <value>金身罗汉</value>
+  </data>
+  <data name="achievementName7" xml:space="preserve">
+    <value>财倾天下</value>
+  </data>
+  <data name="achievementName8" xml:space="preserve">
+    <value>博古通今</value>
+  </data>
+  <data name="achievementName9" xml:space="preserve">
+    <value>枕典席文</value>
   </data>
   <data name="eventDescription0" xml:space="preserve">
     <value>这年的冬天格外寒冷,风雪拍打着门窗...</value>

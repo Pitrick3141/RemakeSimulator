@@ -43,6 +43,7 @@ namespace Remake_Simulator_Csharp
                             score += 10;
                             break;
                         default:
+                            Achievements.AchievementsObtain(3);
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "仙龄", Color.Crimson);
                             score += 20;
                             break;
@@ -51,23 +52,24 @@ namespace Remake_Simulator_Csharp
                 case 1:
                     switch (Globle.appearance)
                     {
-                        case int n when (n < 3):
+                        case int n when (n < 4):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "不堪入目", Color.Gray);
                             score += 1;
                             break;
-                        case int n when (n < 6):
+                        case int n when (n < 7):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "平平无奇", Color.Blue);
                             score += 3;
                             break;
-                        case int n when (n < 10):
+                        case int n when (n < 12):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "相貌出众", Color.Violet);
                             score += 5;
                             break;
-                        case int n when (n < 15):
+                        case int n when (n < 20):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "倾国倾城", Color.Orange);
                             score += 10;
                             break;
                         default:
+                            Achievements.AchievementsObtain(4);
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "天仙下凡", Color.Crimson);
                             score += 20;
                             break;
@@ -76,23 +78,24 @@ namespace Remake_Simulator_Csharp
                 case 2:
                     switch (Globle.intelligence)
                     {
-                        case int n when (n < 3):
+                        case int n when (n < 4):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "愚昧无知", Color.Gray);
                             score += 1;
                             break;
-                        case int n when (n < 6):
+                        case int n when (n < 7):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "泯然众人", Color.Blue);
                             score += 3;
                             break;
-                        case int n when (n < 10):
+                        case int n when (n < 12):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "天资聪慧", Color.Violet);
                             score += 5;
                             break;
-                        case int n when (n < 15):
+                        case int n when (n < 20):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "颖悟绝人", Color.Orange);
                             score += 10;
                             break;
                         default:
+                            Achievements.AchievementsObtain(5);
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "慧眼秋毫", Color.Crimson);
                             score += 20;
                             break;
@@ -101,23 +104,24 @@ namespace Remake_Simulator_Csharp
                 case 3:
                     switch (Globle.fitness)
                     {
-                        case int n when (n < 3):
+                        case int n when (n < 4):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "体弱多病", Color.Gray);
                             score += 1;
                             break;
-                        case int n when (n < 6):
+                        case int n when (n < 7):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "常人体魄", Color.Blue);
                             score += 3;
                             break;
-                        case int n when (n < 10):
+                        case int n when (n < 12):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "身强力壮", Color.Violet);
                             score += 5;
                             break;
-                        case int n when (n < 15):
+                        case int n when (n < 20):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "百毒不侵", Color.Orange);
                             score += 10;
                             break;
                         default:
+                            Achievements.AchievementsObtain(6);
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "金身罗汉", Color.Crimson);
                             score += 20;
                             break;
@@ -126,23 +130,24 @@ namespace Remake_Simulator_Csharp
                 case 4:
                     switch (Globle.wealth)
                     {
-                        case int n when (n < 3):
+                        case int n when (n < 4):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "家徒四壁", Color.Gray);
                             score += 1;
                             break;
-                        case int n when (n < 6):
+                        case int n when (n < 7):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "小康家庭", Color.Blue);
                             score += 3;
                             break;
-                        case int n when (n < 10):
+                        case int n when (n < 12):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "家底殷实", Color.Violet);
                             score += 5;
                             break;
-                        case int n when (n < 15):
+                        case int n when (n < 20):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "富可敌国", Color.Orange);
                             score += 10;
                             break;
                         default:
+                            Achievements.AchievementsObtain(7);
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "财倾天下", Color.Crimson);
                             score += 20;
                             break;
@@ -151,23 +156,24 @@ namespace Remake_Simulator_Csharp
                 case 5:
                     switch (Globle.eventOccur)
                     {
-                        case int n when (n < 10):
+                        case int n when (n < 15):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "不经世故", Color.Gray);
                             score += 1;
                             break;
-                        case int n when (n < 25):
+                        case int n when (n < 30):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "初出茅庐", Color.Blue);
                             score += 3;
                             break;
-                        case int n when (n < 50):
+                        case int n when (n < 45):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "走南闯北", Color.Violet);
                             score += 5;
                             break;
-                        case int n when (n < 100):
+                        case int n when (n < 60):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "轻车熟路", Color.Orange);
                             score += 10;
                             break;
                         default:
+                            Achievements.AchievementsObtain(8);
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "博古通今", Color.Crimson);
                             score += 20;
                             break;
@@ -176,23 +182,24 @@ namespace Remake_Simulator_Csharp
                 case 6:
                     switch (Globle.newsBrowse)
                     {
-                        case int n when (n < 5):
+                        case int n when (n < 10):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "耳目闭塞", Color.Gray);
                             score += 1;
                             break;
-                        case int n when (n < 10):
+                        case int n when (n < 20):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "独学寡闻", Color.Blue);
                             score += 3;
                             break;
-                        case int n when (n < 20):
+                        case int n when (n < 35):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "手不释卷", Color.Violet);
                             score += 5;
                             break;
-                        case int n when (n < 30):
+                        case int n when (n < 50):
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "博览群书", Color.Orange);
                             score += 10;
                             break;
                         default:
+                            Achievements.AchievementsObtain(9);
                             RichTextBoxExtension.AppendTextColorful(richTextBox1, "枕典席文", Color.Crimson);
                             score += 20;
                             break;
@@ -243,20 +250,24 @@ namespace Remake_Simulator_Csharp
             RichTextBoxExtension.AppendTextColorful(richTextBox1, "新闻浏览次数：", Color.Black, false);
             RichTextBoxExtension.AppendTextColorful(richTextBox1, Globle.appearance.ToString(), Color.CornflowerBlue, false);
             AddComment(6);
-
+            if(score > 125)
+            {
+                Achievements.AchievementsObtain(10);
+            }
         }
         private void FormEnd_Load(object sender, EventArgs e)
         {
-            if(Globle.remakeCnt == 0)
-            {
                 EndInitialize();
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("您确定要退出吗？", "退出游戏", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Globle.SaveGame();
                 System.Environment.Exit(0);
+            }
+                
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -30,6 +30,9 @@ namespace Remake_Simulator_Csharp
                 case 3:
                     labelTitle.ForeColor = Color.Orange;
                     break;
+                case 4:
+                    labelTitle.ForeColor = Color.Red;
+                    break;
                 default:
                     labelTitle.ForeColor = Color.Gray;
                     break;

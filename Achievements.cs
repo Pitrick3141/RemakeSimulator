@@ -53,8 +53,17 @@ namespace Remake_Simulator_Csharp
 
         public static Achievement[] achievements =
         {
-            new Achievement(0),
-            new Achievement(1),
+            new Achievement(0),//测试成就
+            new Achievement(1),//Hello World!
+            new Achievement(1),//寄!
+            new Achievement(2),//仙寿
+            new Achievement(2),//天仙下凡
+            new Achievement(2),//慧眼秋毫
+            new Achievement(2),//金身罗汉
+            new Achievement(2),//财倾天下
+            new Achievement(2),//博古通今
+            new Achievement(2),//枕典席文
+            new Achievement(3),
         };
         public static void AchievementsInitiallize()
         {

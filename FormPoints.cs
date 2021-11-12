@@ -172,10 +172,7 @@ namespace Remake_Simulator_Csharp
         }
         private void FormPoints_Load(object sender, EventArgs e)
         {
-            if(Globle.remakeCnt == 0)
-            {
                 PointsInitialize();
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
