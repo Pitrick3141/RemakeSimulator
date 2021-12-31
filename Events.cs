@@ -8,9 +8,9 @@ namespace Remake_Simulator_Csharp
 {
     static class RandomEvents
     {
+        public static WeightedRandom eventRandom = new WeightedRandom();
         static int seed = Guid.NewGuid().GetHashCode();
         static System.Random rd = new System.Random(seed);//初始化随机数生成器
-        public static int cumulation = 0;//累计概率
         public static int cnt = 0;//计数器，记录当前的事件序号
         
         public struct Event
@@ -27,7 +27,7 @@ namespace Remake_Simulator_Csharp
              * 最小最大均为0则是不会自然发生
              * 最小最大均为-1则是没有年龄限制，随时都可以发生
             */
-            readonly int _cumuposs;//事件发生的累计概率
+            readonly int _poss;//事件发生的概率
 
             public Event(int eventResults,int eventMinAge,int eventMaxAge,int eventPossibility,bool sole = false, string eventName = "",string eventDescription = "")
             {
@@ -37,15 +37,14 @@ namespace Remake_Simulator_Csharp
                 this._res = new string[eventResults];
                 this._minage = eventMinAge;
                 this._maxage = eventMaxAge;
-                this._cumuposs = cumulation - eventPossibility;
-                cumulation -= eventPossibility;
+                this._poss = eventPossibility;
                 this._sole = sole;
                 this._occur = 0;
             }//事件结构的构造函数
 
-            public int CumulationPossibility
+            public int Possibility
             {
-                get { return this._cumuposs; }
+                get { return this._poss; }
                 set { }
             }
             public int Number
@@ -115,6 +114,7 @@ namespace Remake_Simulator_Csharp
             new Event(3,0,0,0),//8,上学事件的变体，财富不足4时触发
             new Event(0,-1,-1,5),//9
             new Event(1,0,0,0),//10,看新闻的变体，在1982年前触发
+            new Event(0,0,0,0),//11，自然死亡
         };
         public static void EventsInitiallize()
         {
@@ -139,25 +139,44 @@ namespace Remake_Simulator_Csharp
                     events[i].SetEventResult(j, rm.GetString("eventResult" + events[i].Number.ToString() + "-" + j.ToString()));
                 }
             }
+            if (Globle.isDebug == true)
+            {
+                Console.WriteLine("[info]Event资源文件读取完成");
+            }
+            //初始化权重列表
+            int[] weightList = new int[cnt];
+            foreach (Event current in events)
+            {
+                weightList[current.Number] = current.Possibility;
+            }
+            eventRandom.RandomInitiallize(weightList);
+            if (Globle.isDebug == true)
+            {
+                Console.WriteLine("[info]Event类初始化完成");
+            }
+        }
+        public static void PossibilityAdjust()
+        {
+            int[] weightList = new int[cnt];
+            foreach (Event current in events)
+            {
+                weightList[current.Number] = current.Possibility;
+            }
+            eventRandom.RandomInitiallize(weightList);
+            if (Globle.isDebug == true)
+            {
+                Console.WriteLine("[info]Events概率修改已生效");
+            }
         }
         public static int RandomPickEvent(int age)
         {
             int eventNo = -1;//初始化抽到的事件序号      
             while(eventNo == -1 ||events[eventNo].IsSoleEvent() == false || events[eventNo].EventMinAge > age || events[eventNo].EventMaxAge < age && events[eventNo].EventMinAge != -1 && events[eventNo].EventMaxAge != -1)
             {
-                int randomRes = rd.Next(System.Math.Abs(cumulation));
-                randomRes *= -1;
-                foreach (Event ev in events)
-                {
-                    if (ev.CumulationPossibility <= randomRes)
-                    {
-                        eventNo = ev.Number;
-                        break;
-                    }
-                }
+                eventNo = eventRandom.GetRandomIndex();
             }
             if (Globle.isDebug == true)
-                System.Console.WriteLine("[debug]选中了序号为{0}的事件\"{1}\"", eventNo, events[eventNo].EventName);
+                System.Console.WriteLine("[info]选中了序号为{0}的事件\"{1}\"", eventNo, events[eventNo].EventName);
             events[eventNo].Occur();
             return eventNo;
         }

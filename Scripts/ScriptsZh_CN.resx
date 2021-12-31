@@ -117,6 +117,76 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="abilityDescription0" xml:space="preserve">
+    <value>未知的力量在你手中流动...\n你被赐予了使用魔法的能力</value>
+  </data>
+  <data name="abilityDescription1" xml:space="preserve">
+    <value>体质+3</value>
+  </data>
+  <data name="abilityDescription10" xml:space="preserve">
+    <value>能力重抽次数+3
+"我的愿望就是...再来三个愿望！"</value>
+  </data>
+  <data name="abilityDescription2" xml:space="preserve">
+    <value>智力+3</value>
+  </data>
+  <data name="abilityDescription3" xml:space="preserve">
+    <value>变得更加幸运</value>
+  </data>
+  <data name="abilityDescription4" xml:space="preserve">
+    <value>Nothing at all</value>
+  </data>
+  <data name="abilityDescription5" xml:space="preserve">
+    <value>财富+3</value>
+  </data>
+  <data name="abilityDescription6" xml:space="preserve">
+    <value>获得自由分配点数的能力</value>
+  </data>
+  <data name="abilityDescription7" xml:space="preserve">
+    <value>锁定性别为兼性
+该能力将覆盖不食烟火</value>
+  </data>
+  <data name="abilityDescription8" xml:space="preserve">
+    <value>锁定性别为无性
+该能力将被人中龙凤覆盖</value>
+  </data>
+  <data name="abilityDescription9" xml:space="preserve">
+    <value>将你从死亡的边缘带回
+"什么？不死图腾？!"</value>
+  </data>
+  <data name="abilityName0" xml:space="preserve">
+    <value>【史诗】魔法</value>
+  </data>
+  <data name="abilityName1" xml:space="preserve">
+    <value>强身健体</value>
+  </data>
+  <data name="abilityName10" xml:space="preserve">
+    <value>【传说】循环嵌套</value>
+  </data>
+  <data name="abilityName2" xml:space="preserve">
+    <value>智慧</value>
+  </data>
+  <data name="abilityName3" xml:space="preserve">
+    <value>幸运</value>
+  </data>
+  <data name="abilityName4" xml:space="preserve">
+    <value>什么也没有</value>
+  </data>
+  <data name="abilityName5" xml:space="preserve">
+    <value>腰缠万贯</value>
+  </data>
+  <data name="abilityName6" xml:space="preserve">
+    <value>【稀有】我命由我</value>
+  </data>
+  <data name="abilityName7" xml:space="preserve">
+    <value>【稀有】人中龙凤</value>
+  </data>
+  <data name="abilityName8" xml:space="preserve">
+    <value>【稀有】不食烟火</value>
+  </data>
+  <data name="abilityName9" xml:space="preserve">
+    <value>【史诗】超越生死</value>
+  </data>
   <data name="achievementDescription0" xml:space="preserve">
     <value>这是个测试！</value>
   </data>
@@ -192,6 +262,9 @@
   <data name="eventDescription10" xml:space="preserve">
     <value>你坐在家中阅读今天的报纸，</value>
   </data>
+  <data name="eventDescription11" xml:space="preserve">
+    <value>在睡梦中，你溘然长逝...</value>
+  </data>
   <data name="eventDescription2" xml:space="preserve">
     <value>你和隔壁的二狗撒尿和泥巴，玩的很开心</value>
   </data>
@@ -224,6 +297,9 @@
   </data>
   <data name="eventName10" xml:space="preserve">
     <value>闲暇时光：报纸</value>
+  </data>
+  <data name="eventName11" xml:space="preserve">
+    <value>自然死亡</value>
   </data>
   <data name="eventName2" xml:space="preserve">
     <value>儿时玩乐</value>
@@ -314,5 +390,89 @@
   </data>
   <data name="eventResult8-2" xml:space="preserve">
     <value>同学们还是发现了你身体的秘密，大家开始疏远你，你深刻意识到与他人的隔阂</value>
+  </data>
+  <data name="newsDescription0" xml:space="preserve">
+    <value>今日哔哩哔哩CEO陈睿母亲逝世</value>
+  </data>
+  <data name="newsDescription1" xml:space="preserve">
+    <value>今日法国发生一起暴乱事件</value>
+  </data>
+  <data name="newsDescription10" xml:space="preserve">
+    <value>蔡锷在云南起义，组织护国军，讨伐袁世凯</value>
+  </data>
+  <data name="newsDescription11" xml:space="preserve">
+    <value>袁世凯去世，黎元洪继任总统</value>
+  </data>
+  <data name="newsDescription12" xml:space="preserve">
+    <value>孙中山在广州发动护法运动</value>
+  </data>
+  <data name="newsDescription13" xml:space="preserve">
+    <value>德国投降，一战以同盟国的失败为告终</value>
+  </data>
+  <data name="newsDescription2" xml:space="preserve">
+    <value>在本届世界杯中，中国男足成功打入八强</value>
+  </data>
+  <data name="newsDescription3" xml:space="preserve">
+    <value>光绪二十七年，清政府签订辛丑条约</value>
+  </data>
+  <data name="newsDescription4" xml:space="preserve">
+    <value>日本与俄国在中国东北地区以及朝鲜半岛地区开战，俄国战败</value>
+  </data>
+  <data name="newsDescription5" xml:space="preserve">
+    <value>中国同盟会在日本东京成立,选举孙中山为总理</value>
+  </data>
+  <data name="newsDescription6" xml:space="preserve">
+    <value>武昌起义打响，辛亥革命开始</value>
+  </data>
+  <data name="newsDescription7" xml:space="preserve">
+    <value>中华民国临时大总统孙中山在南京就职，宣告中华民国成立</value>
+  </data>
+  <data name="newsDescription8" xml:space="preserve">
+    <value>二次革命失败，袁世凯当任大总统</value>
+  </data>
+  <data name="newsDescription9" xml:space="preserve">
+    <value>斐迪南大公夫妇在萨拉热窝遇刺，第一次世界大战爆发</value>
+  </data>
+  <data name="newsName0" xml:space="preserve">
+    <value>蒙古上单</value>
+  </data>
+  <data name="newsName1" xml:space="preserve">
+    <value>法国暴乱</value>
+  </data>
+  <data name="newsName10" xml:space="preserve">
+    <value>护国运动</value>
+  </data>
+  <data name="newsName11" xml:space="preserve">
+    <value>护国运动结束</value>
+  </data>
+  <data name="newsName12" xml:space="preserve">
+    <value>护法运动</value>
+  </data>
+  <data name="newsName13" xml:space="preserve">
+    <value>第一次世界大战结束</value>
+  </data>
+  <data name="newsName2" xml:space="preserve">
+    <value>打入八强</value>
+  </data>
+  <data name="newsName3" xml:space="preserve">
+    <value>辛丑条约</value>
+  </data>
+  <data name="newsName4" xml:space="preserve">
+    <value>日俄战争</value>
+  </data>
+  <data name="newsName5" xml:space="preserve">
+    <value>同盟会成立</value>
+  </data>
+  <data name="newsName6" xml:space="preserve">
+    <value>武昌起义</value>
+  </data>
+  <data name="newsName7" xml:space="preserve">
+    <value>中华民国成立</value>
+  </data>
+  <data name="newsName8" xml:space="preserve">
+    <value>二次革命</value>
+  </data>
+  <data name="newsName9" xml:space="preserve">
+    <value>第一次世界大战</value>
   </data>
 </root>

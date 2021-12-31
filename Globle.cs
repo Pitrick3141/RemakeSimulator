@@ -29,7 +29,7 @@ namespace Remake_Simulator_Csharp
             formStart.StartInitialize();
             if(isDebug == true)
             {
-                System.Console.WriteLine("[debug]全局变量已重置!");
+                System.Console.WriteLine("[info]全局变量已重置");
             }
             
         }//重新开始游戏时的初始化
@@ -55,29 +55,41 @@ namespace Remake_Simulator_Csharp
             savingData["maxLiveSpan"] = maxLiveSpan;
             savingData["maxEventOccur"] = maxEventOccur;
             savingData["maxNewsBrowse"] = maxNewsBrowse;
+            savingData["maxScore"] = maxScore;
             savingData["totalLiveSpan"] = totalLiveSpan;
             savingData["totalEventOccur"] = totalEventOccur;
             savingData["totalNewsBrowse"] = totalNewsBrowse;
-            for(int i = 0;i<Achievements.achievements.Length;i++)
+            savingData["totalScore"] = totalScore;
+            for (int i = 0;i<Achievements.achievements.Length;i++)
             {
                 savingData["achievementObtained" + i.ToString()] = Achievements.achievements[i].AchievementObtained;
                 savingData["achievementObtainedTime" + i.ToString()] = Achievements.achievements[i].AchievementObtainedTime;
             }
 
-            using (StreamWriter sw = new StreamWriter("save.txt"))
+            using (StreamWriter sw = new StreamWriter("save.json"))
             {
                 sw.Write(savingData.ToJson());
+            }
+            if (isDebug == true)
+            {
+                System.Console.WriteLine("[info]游戏已保存");
             }
         }
         public static void ReadGame()
         {
-            JsonData savingData = JsonMapper.ToObject(File.ReadAllText("save.txt"));
+            if(File.Exists("save.json") == false)
+            {
+                return;
+            }
+            JsonData savingData = JsonMapper.ToObject(File.ReadAllText("save.json"));
             maxLiveSpan = (int)savingData["maxLiveSpan"];
             maxEventOccur = (int)savingData["maxEventOccur"];
             maxNewsBrowse = (int)savingData["maxNewsBrowse"];
+            maxScore = (int)savingData["maxScore"];
             totalLiveSpan = (int)savingData["totalLiveSpan"];
             totalEventOccur = (int)savingData["totalEventOccur"];
             totalNewsBrowse = (int)savingData["totalNewsBrowse"];
+            totalScore = (int)savingData["totalScore"];
             for (int i = 0; i < Achievements.achievements.Length; i++)
             {
                 try
@@ -92,6 +104,10 @@ namespace Remake_Simulator_Csharp
                         Console.WriteLine("[Error]" + e);//这里更新新的成就后使用旧的存档可能会出现问题，但是不严重
                     }
                 }
+            }
+            if (isDebug == true)
+            {
+                System.Console.WriteLine("[info]游戏已读取");
             }
         }
         public enum Gender
@@ -161,8 +177,10 @@ namespace Remake_Simulator_Csharp
         public static int maxLiveSpan = 0;
         public static int maxEventOccur = 0;
         public static int maxNewsBrowse = 0;
+        public static int maxScore = 0;
         public static int totalLiveSpan = 0;
         public static int totalEventOccur = 0;
         public static int totalNewsBrowse = 0;
+        public static int totalScore = 0;
     }
 }

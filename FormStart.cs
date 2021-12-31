@@ -91,9 +91,14 @@ namespace Remake_Simulator_Csharp
         }
         private void FormStart_Load(object sender, EventArgs e)
         {
+            if(Globle.remakeCnt == 0)
+            {
+                RandomEvents.EventsInitiallize();
+                Achievements.AchievementsInitiallize();
+                Abilities.AbilityInitialize();
+                RandomNews.NewsInitialize();
+            }
             Globle.ReadGame();
-            RandomEvents.EventsInitiallize();
-            Achievements.AchievementsInitiallize();
         }
 
         private void debugToolStripMenuItem_Click(object sender, EventArgs e)
@@ -112,6 +117,8 @@ namespace Remake_Simulator_Csharp
         private void MenuSkipAbility_Click(object sender, EventArgs e)
         {
             System.Console.WriteLine("[debug]已跳过能力选择");
+            if (Globle.remakeCnt != 0)
+                Globle.formPoints.PointsInitialize();
             Globle.formPoints.Show();
             this.Hide();
         }

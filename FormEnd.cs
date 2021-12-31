@@ -13,6 +13,7 @@ namespace Remake_Simulator_Csharp
     public partial class FormEnd : Form
     {
         public int score = 0;
+        public double scoreCoef = 1;//得分系数
         public FormEnd()
         {
             InitializeComponent();
@@ -218,12 +219,15 @@ namespace Remake_Simulator_Csharp
             {
                 case Globle.Difficult.Easy:
                     RichTextBoxExtension.AppendTextColorful(richTextBox1, "简单", Color.SpringGreen);
+                    scoreCoef = 0.7;
                     break;
                 case Globle.Difficult.Normal:
                     RichTextBoxExtension.AppendTextColorful(richTextBox1, "普通", Color.Gold);
+                    scoreCoef = 1;
                     break;
                 case Globle.Difficult.Difficult:
                     RichTextBoxExtension.AppendTextColorful(richTextBox1, "困难", Color.Orange);
+                    scoreCoef = 1.3;
                     break;
             }
 
@@ -245,15 +249,23 @@ namespace Remake_Simulator_Csharp
             RichTextBoxExtension.AppendTextColorful(richTextBox1, Globle.wealth.ToString(), Color.CornflowerBlue,false);
             AddComment(4);
             RichTextBoxExtension.AppendTextColorful(richTextBox1, "事件发生次数：", Color.Black, false);
-            RichTextBoxExtension.AppendTextColorful(richTextBox1, Globle.appearance.ToString(), Color.CornflowerBlue, false);
+            RichTextBoxExtension.AppendTextColorful(richTextBox1, Globle.eventOccur.ToString(), Color.CornflowerBlue, false);
             AddComment(5);
             RichTextBoxExtension.AppendTextColorful(richTextBox1, "新闻浏览次数：", Color.Black, false);
-            RichTextBoxExtension.AppendTextColorful(richTextBox1, Globle.appearance.ToString(), Color.CornflowerBlue, false);
+            RichTextBoxExtension.AppendTextColorful(richTextBox1, Globle.newsBrowse.ToString(), Color.CornflowerBlue, false);
             AddComment(6);
-            if(score > 125)
+            score = (int)(scoreCoef*score);
+            RichTextBoxExtension.AppendTextColorful(richTextBox1, "总计得分：", Color.Black, false);
+            RichTextBoxExtension.AppendTextColorful(richTextBox1, (score).ToString(), Color.CornflowerBlue, false);
+            if (score > 125)
             {
                 Achievements.AchievementsObtain(10);
             }
+            if(score > Globle.maxScore)
+            {
+                Globle.maxScore = score;
+            }
+            Globle.totalScore += score;
         }
         private void FormEnd_Load(object sender, EventArgs e)
         {

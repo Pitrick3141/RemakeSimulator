@@ -119,6 +119,7 @@
     <Compile Include="FormStatistics.Designer.cs">
       <DependentUpon>FormStatistics.cs</DependentUpon>
     </Compile>
+    <Compile Include="WeightedRandom.cs" />
     <EmbeddedResource Include="FormAchievement.resx">
       <DependentUpon>FormAchievement.cs</DependentUpon>
     </EmbeddedResource>

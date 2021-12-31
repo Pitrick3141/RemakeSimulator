@@ -22,9 +22,10 @@ namespace Remake_Simulator_Csharp
             listView1.Items.Add(new ListViewItem(new string[] {"最长生存时间",Globle.maxLiveSpan.ToString() }));
             listView1.Items.Add(new ListViewItem(new string[] { "最多事件发生数", Globle.maxEventOccur.ToString() }));
             listView1.Items.Add(new ListViewItem(new string[] { "最多新闻浏览数", Globle.maxNewsBrowse.ToString() }));
+            listView1.Items.Add(new ListViewItem(new string[] { "最高得分", Globle.maxScore.ToString() }));
             listView1.Items.Add(new ListViewItem(new string[] { "总生存时间", Globle.totalLiveSpan.ToString() }));
             listView1.Items.Add(new ListViewItem(new string[] { "总事件发生数", Globle.totalEventOccur.ToString() }));
-            listView1.Items.Add(new ListViewItem(new string[] { "总新闻浏览数", Globle.totalNewsBrowse.ToString() }));
+            listView1.Items.Add(new ListViewItem(new string[] { "总得分", Globle.totalScore.ToString() }));
             for (int i = 0; i < Achievements.achievements.Length;i++)
             {
                 if(Achievements.achievements[i].AchievementObtained == true)

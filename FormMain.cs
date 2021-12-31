@@ -108,6 +108,7 @@ namespace Remake_Simulator_Csharp
                 case 6:
                     Info(Globle.age.ToString() + "岁时，" + RandomEvents.EventOccur(6));//固定事件：入学
                     break;
+
             }
             if(!Globle.isAlive)
             {
@@ -120,6 +121,7 @@ namespace Remake_Simulator_Csharp
                 }
                 else
                 {
+                    Achievements.AchievementsObtain(2);//获得成就：寄！
                     Info("你寄了...点击人生总结按钮查看得分");
                     button1.Enabled = false;
                     button3.Visible = true;
@@ -152,6 +154,7 @@ namespace Remake_Simulator_Csharp
 
         private void MenuSuicide_Click(object sender, EventArgs e)
         {
+            Achievements.AchievementsObtain(2);
             Info("你寄了...点击人生总结按钮查看得分");
             button1.Enabled = false;
             button3.Visible = true;

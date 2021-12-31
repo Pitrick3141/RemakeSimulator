@@ -63,7 +63,7 @@ namespace Remake_Simulator_Csharp
             new Achievement(2),//财倾天下
             new Achievement(2),//博古通今
             new Achievement(2),//枕典席文
-            new Achievement(3),
+            new Achievement(3),//人上人
         };
         public static void AchievementsInitiallize()
         {

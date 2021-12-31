@@ -61,6 +61,208 @@ namespace Remake_Simulator_Csharp.Scripts {
         }
         
         /// <summary>
+        ///   查找类似 未知的力量在你手中流动...\n你被赐予了使用魔法的能力 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription0 {
+            get {
+                return ResourceManager.GetString("abilityDescription0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 体质+3 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription1 {
+            get {
+                return ResourceManager.GetString("abilityDescription1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 能力重抽次数+3
+        ///&quot;我的愿望就是...再来三个愿望！&quot; 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription10 {
+            get {
+                return ResourceManager.GetString("abilityDescription10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 智力+3 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription2 {
+            get {
+                return ResourceManager.GetString("abilityDescription2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 变得更加幸运 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription3 {
+            get {
+                return ResourceManager.GetString("abilityDescription3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Nothing at all 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription4 {
+            get {
+                return ResourceManager.GetString("abilityDescription4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 财富+3 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription5 {
+            get {
+                return ResourceManager.GetString("abilityDescription5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 获得自由分配点数的能力 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription6 {
+            get {
+                return ResourceManager.GetString("abilityDescription6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 锁定性别为兼性
+        ///该能力将覆盖不食烟火 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription7 {
+            get {
+                return ResourceManager.GetString("abilityDescription7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 锁定性别为无性
+        ///该能力将被人中龙凤覆盖 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription8 {
+            get {
+                return ResourceManager.GetString("abilityDescription8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 将你从死亡的边缘带回
+        ///&quot;什么？不死图腾？!&quot; 的本地化字符串。
+        /// </summary>
+        internal static string abilityDescription9 {
+            get {
+                return ResourceManager.GetString("abilityDescription9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 【史诗】魔法 的本地化字符串。
+        /// </summary>
+        internal static string abilityName0 {
+            get {
+                return ResourceManager.GetString("abilityName0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 强身健体 的本地化字符串。
+        /// </summary>
+        internal static string abilityName1 {
+            get {
+                return ResourceManager.GetString("abilityName1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 【传说】循环嵌套 的本地化字符串。
+        /// </summary>
+        internal static string abilityName10 {
+            get {
+                return ResourceManager.GetString("abilityName10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 智慧 的本地化字符串。
+        /// </summary>
+        internal static string abilityName2 {
+            get {
+                return ResourceManager.GetString("abilityName2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 幸运 的本地化字符串。
+        /// </summary>
+        internal static string abilityName3 {
+            get {
+                return ResourceManager.GetString("abilityName3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 什么也没有 的本地化字符串。
+        /// </summary>
+        internal static string abilityName4 {
+            get {
+                return ResourceManager.GetString("abilityName4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 腰缠万贯 的本地化字符串。
+        /// </summary>
+        internal static string abilityName5 {
+            get {
+                return ResourceManager.GetString("abilityName5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 【稀有】我命由我 的本地化字符串。
+        /// </summary>
+        internal static string abilityName6 {
+            get {
+                return ResourceManager.GetString("abilityName6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 【稀有】人中龙凤 的本地化字符串。
+        /// </summary>
+        internal static string abilityName7 {
+            get {
+                return ResourceManager.GetString("abilityName7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 【稀有】不食烟火 的本地化字符串。
+        /// </summary>
+        internal static string abilityName8 {
+            get {
+                return ResourceManager.GetString("abilityName8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 【史诗】超越生死 的本地化字符串。
+        /// </summary>
+        internal static string abilityName9 {
+            get {
+                return ResourceManager.GetString("abilityName9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 这是个测试！ 的本地化字符串。
         /// </summary>
         internal static string achievementDescription0 {
@@ -286,6 +488,15 @@ namespace Remake_Simulator_Csharp.Scripts {
         }
         
         /// <summary>
+        ///   查找类似 在睡梦中，你溘然长逝... 的本地化字符串。
+        /// </summary>
+        internal static string eventDescription11 {
+            get {
+                return ResourceManager.GetString("eventDescription11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 你和隔壁的二狗撒尿和泥巴，玩的很开心 的本地化字符串。
         /// </summary>
         internal static string eventDescription2 {
@@ -381,6 +592,15 @@ namespace Remake_Simulator_Csharp.Scripts {
         internal static string eventName10 {
             get {
                 return ResourceManager.GetString("eventName10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 自然死亡 的本地化字符串。
+        /// </summary>
+        internal static string eventName11 {
+            get {
+                return ResourceManager.GetString("eventName11", resourceCulture);
             }
         }
         
@@ -651,6 +871,258 @@ namespace Remake_Simulator_Csharp.Scripts {
         internal static string eventResult8_2 {
             get {
                 return ResourceManager.GetString("eventResult8-2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 今日哔哩哔哩CEO陈睿母亲逝世 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription0 {
+            get {
+                return ResourceManager.GetString("newsDescription0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 今日法国发生一起暴乱事件 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription1 {
+            get {
+                return ResourceManager.GetString("newsDescription1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 蔡锷在云南起义，组织护国军，讨伐袁世凯 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription10 {
+            get {
+                return ResourceManager.GetString("newsDescription10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 袁世凯去世，黎元洪继任总统 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription11 {
+            get {
+                return ResourceManager.GetString("newsDescription11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 孙中山在广州发动护法运动 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription12 {
+            get {
+                return ResourceManager.GetString("newsDescription12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 德国投降，一战以同盟国的失败为告终 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription13 {
+            get {
+                return ResourceManager.GetString("newsDescription13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 在本届世界杯中，中国男足成功打入八强 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription2 {
+            get {
+                return ResourceManager.GetString("newsDescription2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 光绪二十七年，清政府签订辛丑条约 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription3 {
+            get {
+                return ResourceManager.GetString("newsDescription3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 日本与俄国在中国东北地区以及朝鲜半岛地区开战，俄国战败 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription4 {
+            get {
+                return ResourceManager.GetString("newsDescription4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 中国同盟会在日本东京成立,选举孙中山为总理 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription5 {
+            get {
+                return ResourceManager.GetString("newsDescription5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 武昌起义打响，辛亥革命开始 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription6 {
+            get {
+                return ResourceManager.GetString("newsDescription6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 中华民国临时大总统孙中山在南京就职，宣告中华民国成立 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription7 {
+            get {
+                return ResourceManager.GetString("newsDescription7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 二次革命失败，袁世凯当任大总统 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription8 {
+            get {
+                return ResourceManager.GetString("newsDescription8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 斐迪南大公夫妇在萨拉热窝遇刺，第一次世界大战爆发 的本地化字符串。
+        /// </summary>
+        internal static string newsDescription9 {
+            get {
+                return ResourceManager.GetString("newsDescription9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 蒙古上单 的本地化字符串。
+        /// </summary>
+        internal static string newsName0 {
+            get {
+                return ResourceManager.GetString("newsName0", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 法国暴乱 的本地化字符串。
+        /// </summary>
+        internal static string newsName1 {
+            get {
+                return ResourceManager.GetString("newsName1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 护国运动 的本地化字符串。
+        /// </summary>
+        internal static string newsName10 {
+            get {
+                return ResourceManager.GetString("newsName10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 护国运动结束 的本地化字符串。
+        /// </summary>
+        internal static string newsName11 {
+            get {
+                return ResourceManager.GetString("newsName11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 护法运动 的本地化字符串。
+        /// </summary>
+        internal static string newsName12 {
+            get {
+                return ResourceManager.GetString("newsName12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 第一次世界大战结束 的本地化字符串。
+        /// </summary>
+        internal static string newsName13 {
+            get {
+                return ResourceManager.GetString("newsName13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 打入八强 的本地化字符串。
+        /// </summary>
+        internal static string newsName2 {
+            get {
+                return ResourceManager.GetString("newsName2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 辛丑条约 的本地化字符串。
+        /// </summary>
+        internal static string newsName3 {
+            get {
+                return ResourceManager.GetString("newsName3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 日俄战争 的本地化字符串。
+        /// </summary>
+        internal static string newsName4 {
+            get {
+                return ResourceManager.GetString("newsName4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 同盟会成立 的本地化字符串。
+        /// </summary>
+        internal static string newsName5 {
+            get {
+                return ResourceManager.GetString("newsName5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 武昌起义 的本地化字符串。
+        /// </summary>
+        internal static string newsName6 {
+            get {
+                return ResourceManager.GetString("newsName6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 中华民国成立 的本地化字符串。
+        /// </summary>
+        internal static string newsName7 {
+            get {
+                return ResourceManager.GetString("newsName7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 二次革命 的本地化字符串。
+        /// </summary>
+        internal static string newsName8 {
+            get {
+                return ResourceManager.GetString("newsName8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 第一次世界大战 的本地化字符串。
+        /// </summary>
+        internal static string newsName9 {
+            get {
+                return ResourceManager.GetString("newsName9", resourceCulture);
             }
         }
     }
